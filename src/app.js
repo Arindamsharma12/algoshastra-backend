@@ -21,6 +21,9 @@ app.use(cookieParser())
 
 import genieRouter from './routes/gemini.routes.js'
 
+app.get('/',(req,res)=>{
+  res.send(`<h1>Hello</h1>`)
+})
 app.use('/api/v1/users/',genieRouter)
 
 export {app}
